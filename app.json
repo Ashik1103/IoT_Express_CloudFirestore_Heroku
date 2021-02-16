@@ -1,7 +1,7 @@
 {
-  "name": "lintangwisesa",
+  "name": "Ashik1103",
   "description": "IoT Node.js App (Express) & Cloud Firestore on Heroku",
-  "repository": "https://github.com/LintangWisesa/Heroku_Deploy_Example",
+  "repository": "https://github.com/Ashik1103/IoT_Express_CloudFirestore_Heroku.git",
   "keywords": ["node", "express", "heroku", "firebase", "firestore"],
   "image": "heroku/nodejs"
 }
