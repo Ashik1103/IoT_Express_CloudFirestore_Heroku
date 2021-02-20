@@ -49,6 +49,7 @@ app.post('/data/esp32', (req, res)=>{
       ph_value: req.body.ph_val,
       turbidity: req.body.turbi,
       // Date: new Date()
+      Date : datee
 
     });
     res.send({
