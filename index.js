@@ -63,8 +63,8 @@ app.post('/data/esp32', (req, res)=>{
       ph_value: req.body.ph_val,
       turbidity: req.body.turbi,
       Date: new Date().get, 
-      Month:new Month.get,
-      Year:new Year.get,
+      Month:new Date().Month.get,
+      Year:new Date().Year.get,
       status: 'POST data success!'
   })
 })
