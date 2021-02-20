@@ -40,7 +40,11 @@ app.get('/data/esp32', (req, res) => {
 app.post('/data/esp32', (req, res)=>{
   const db = fire.firestore();
   var d= new Date();
-  const datee=(d.getDate()+ '/' + (d.getMonth()+1));
+  const datee=(d.getDate());
+  const monthh=(d.getMonth()+1)
+  const yearr=(d.getFullYear())
+
+
 	db.settings({
       timestampsInSnapshots: true
     });
@@ -49,7 +53,9 @@ app.post('/data/esp32', (req, res)=>{
       ph_value: req.body.ph_val,
       turbidity: req.body.turbi,
       // Date: new Date()
-      Date : datee
+      Date : datee,
+      Month:monthh,
+      Year:yearr
 
     });
     res.send({
@@ -57,6 +63,8 @@ app.post('/data/esp32', (req, res)=>{
       ph_value: req.body.ph_val,
       turbidity: req.body.turbi,
       Date: new Date().get, 
+      Month:new Month.get,
+      Year:new Year.get,
       status: 'POST data success!'
   })
 })
